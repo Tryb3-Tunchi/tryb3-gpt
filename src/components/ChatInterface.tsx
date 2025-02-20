@@ -14,9 +14,9 @@ const WelcomeScreen: React.FC<{ onContinue: () => void }> = ({
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        width: "50vw",
+        width: "35vw",
       }}
-      className="w-full  m-auto h-72 top-20 absolute 
+      className="w-full  m-auto h-72 top-10 absolute 
     "
     ></div>
     <h1 className="text-5xl font-extrabold tracking-wider  my-6 mt-[200px] space-y-10">
