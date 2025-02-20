@@ -1,0 +1,1 @@
+// const summarizer = await ai.summarizer.create({monitor(m){m.addEventListener(`download ${e.loaded} of  ${e.total} bytes.`); }});
