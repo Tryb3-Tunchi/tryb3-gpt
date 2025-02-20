@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { Send, BookOpen, Languages } from "lucide-react";
-import {
-  Message,
-  SupportedLanguage,
-  SUPPORTED_LANGUAGES,
-  LanguageDetectionResult,
-} from "../types";
+import { Message, SupportedLanguage, SUPPORTED_LANGUAGES } from "../types";
 import { AITextProcessor } from "../services/api";
 
 const WelcomeScreen: React.FC<{ onContinue: () => void }> = ({
@@ -63,8 +58,7 @@ export const ChatInterface: React.FC = () => {
 
     try {
       // 1. Call the language detection API
-      const langResult: LanguageDetectionResult =
-        await AITextProcessor.detectLanguage(inputText);
+      const langResult: any = await AITextProcessor.detectLanguage(inputText);
       console.log(
         "Language Detection API response:",
         langResult.data?.[0] ?? "No lang detected"
